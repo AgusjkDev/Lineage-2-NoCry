@@ -19,6 +19,16 @@
         content: "";
         background: url(/assets/anchor-separator.png);
     }
+
+    .bg-video {
+        @apply absolute top-0 left-0 -z-[2] h-screen w-full object-cover;
+    }
+
+    .lines-pattern {
+        @apply absolute inset-0 -z-[1] h-screen opacity-50;
+
+        background: url(/assets/lines-pattern.png);
+    }
 }
 
 @layer utilities {

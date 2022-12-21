@@ -1,0 +1,3 @@
+type BackgroundVideoProps = {
+    src: string;
+};
