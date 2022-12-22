@@ -11,7 +11,7 @@ export default function ImportantDates() {
 
             <div className="mx-auto flex w-[87.5%] flex-col items-center gap-8 lg:w-[95%] lg:flex-row lg:gap-12 xl:w-[87.5%] xl:gap-16">
                 {importantDates.map(({ background, legend, date }) => (
-                    <div className="dropshadow hover:dropshadow-opacity-15 relative flex w-full max-w-xl items-end">
+                    <div key={background} className="dropshadow hover:dropshadow-opacity-15 relative flex w-full max-w-xl items-end">
                         <Image
                             alt={legend}
                             src={`/assets/important-dates/${background}.png`}
