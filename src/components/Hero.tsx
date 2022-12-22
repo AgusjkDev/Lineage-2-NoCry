@@ -38,8 +38,8 @@ export default function Hero() {
             </div>
 
             <div className="mt-4 flex w-full flex-wrap justify-center gap-y-6 md:w-[90%] md:flex-nowrap lg:w-3/4">
-                {features.map(feature => (
-                    <Feature {...feature} />
+                {features.map(({ legend, icon }) => (
+                    <Feature key={icon} legend={legend} icon={icon} />
                 ))}
             </div>
         </main>
