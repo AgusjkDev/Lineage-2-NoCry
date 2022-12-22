@@ -12,7 +12,7 @@
     }
 
     section {
-        @apply relative border-b-[3px] border-amber-200;
+        @apply relative border-b-[3px] border-primary;
     }
 
     section#importantDates {

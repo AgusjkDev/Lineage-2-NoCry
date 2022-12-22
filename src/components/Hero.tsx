@@ -26,7 +26,7 @@ export default function Hero() {
                 className="w-3/4 md:w-1/4"
             />
 
-            <div className="text-shadow flex flex-col items-center gap-3 text-center font-secondary text-3xl uppercase tracking-wider odd:[&>p]:text-amber-200 even:[&>p]:text-white">
+            <div className="text-shadow flex flex-col items-center gap-3 text-center font-secondary text-3xl uppercase tracking-wider odd:[&>p]:text-primary even:[&>p]:text-white">
                 <p>x3 Classic+</p>
                 <p>Mists of Rune</p>
                 <p>01/01/23, 20:00 GMT-3</p>

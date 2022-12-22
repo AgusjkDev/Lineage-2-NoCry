@@ -16,7 +16,7 @@ export default function Navigation() {
                         key={href}
                         href={href}
                         className={`text-center font-primary hover:underline ${
-                            pathname === href ? "text-amber-200" : "text-white"
+                            pathname === href ? "text-primary" : "text-white"
                         } ${isLastAnchor ? "" : "after:anchor-separator relative"}`}
                     >
                         {children}

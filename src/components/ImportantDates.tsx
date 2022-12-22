@@ -5,13 +5,16 @@ import { importantDates } from "data";
 export default function ImportantDates() {
     return (
         <article className="flex w-full flex-col items-center justify-center gap-6 py-8 lg:gap-10 lg:py-12 xl:gap-12">
-            <h2 className="dropshadow dropshadow-opacity-50 text-shadow text-center font-secondary text-3xl font-bold uppercase tracking-wider text-amber-200">
+            <h2 className="dropshadow dropshadow-opacity-50 text-shadow text-center font-secondary text-3xl font-bold uppercase tracking-wider text-primary">
                 Fechas Importantes
             </h2>
 
             <div className="mx-auto flex w-[87.5%] flex-col items-center gap-8 lg:w-[95%] lg:flex-row lg:gap-12 xl:w-[87.5%] xl:gap-16">
                 {importantDates.map(({ background, legend, date }) => (
-                    <div key={background} className="dropshadow hover:dropshadow-opacity-15 relative flex w-full max-w-xl items-end">
+                    <div
+                        key={background}
+                        className="dropshadow hover:dropshadow-opacity-15 relative flex w-full max-w-xl items-end"
+                    >
                         <Image
                             alt={legend}
                             src={`/assets/important-dates/${background}.png`}
@@ -23,7 +26,7 @@ export default function ImportantDates() {
 
                         <div className="absolute z-[1] flex w-full justify-between rounded bg-black/60 p-3">
                             <p className="font-primary text-xl text-white">{legend}</p>
-                            <p className="font-primary text-xl tracking-wider text-amber-200">
+                            <p className="font-primary text-xl tracking-wider text-primary">
                                 {date}
                             </p>
                         </div>
