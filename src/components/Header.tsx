@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed z-[1] flex w-full flex-col bg-black/75 transition-[max-height] duration-300 ${
+            className={`fixed z-[1] flex w-full flex-col bg-black/60 transition-[max-height] duration-300 ${
                 showNavigation ? "max-h-screen" : "max-h-[79px]"
             }`}
         >
@@ -23,6 +23,7 @@ export default function Header() {
                         className="dropshadow hover:dropshadow-opacity-50"
                         width={156}
                         height={39}
+                        quality={100}
                         priority
                     />
                 </Link>
@@ -32,7 +33,14 @@ export default function Header() {
                     onClick={() => setShowNavigation(!showNavigation)}
                     className="dropshadow hover:dropshadow-opacity-100 md:hidden"
                 >
-                    <Image alt={altText} src="/assets/menu.svg" width={32} height={32} priority />
+                    <Image
+                        alt={altText}
+                        src="/assets/menu.svg"
+                        width={32}
+                        height={32}
+                        quality={100}
+                        priority
+                    />
                 </button>
 
                 <div className="hidden md:flex">

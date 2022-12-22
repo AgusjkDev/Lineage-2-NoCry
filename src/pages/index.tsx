@@ -1,4 +1,4 @@
-import { Header, BackgroundVideo } from "components";
+import { Header, BackgroundVideo, Hero } from "components";
 
 export default function Index() {
     return (
@@ -8,9 +8,7 @@ export default function Index() {
             <section className="relative">
                 <BackgroundVideo src="/assets/background-video.webm" />
 
-                <main className="flex min-h-screen items-center justify-center">
-                    <h1 className="text-center text-4xl font-black text-white">Lineage2 Web</h1>
-                </main>
+                <Hero />
             </section>
         </>
     );

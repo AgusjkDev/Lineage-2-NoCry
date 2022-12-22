@@ -1,8 +1,3 @@
-type Anchor = {
-    children: string;
-    href: string;
-};
-
 const anchors: Anchor[] = [
     {
         children: "Inicio",

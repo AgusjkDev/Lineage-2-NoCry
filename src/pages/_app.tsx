@@ -7,6 +7,10 @@ const primaryFont = localFont({
     src: "../fonts/Euclid-Circular-A.ttf",
 });
 
+const secondaryFont = localFont({
+    src: "../fonts/Administer-AT.otf",
+});
+
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
@@ -14,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 {`
                     :root {
                         --font-primary: ${primaryFont.style.fontFamily};
+                        --font-secondary: ${secondaryFont.style.fontFamily};
                     }
                 `}
             </style>

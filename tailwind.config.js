@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 primary: ["var(--font-primary)", ...fontFamily.sans],
+                secondary: ["var(--font-secondary)", ...fontFamily.serif],
             },
         },
     },
