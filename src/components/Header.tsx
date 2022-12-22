@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed z-[1] flex w-full flex-col bg-black/60 transition-[max-height] duration-300 ${
+            className={`fixed z-[1] flex w-full flex-col bg-black/75 transition-[max-height] duration-300 ${
                 showNavigation ? "max-h-screen" : "max-h-[79px]"
             }`}
         >

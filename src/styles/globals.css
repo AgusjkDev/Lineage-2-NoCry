@@ -10,6 +10,17 @@
     body {
         @apply overflow-y-overlay;
     }
+
+    section {
+        @apply relative border-b-[3px] border-amber-200;
+    }
+
+    section#importantDates {
+        background: url(/assets/background-sparks.png);
+        background-size: cover;
+        background-position: center center;
+        background-color: black;
+    }
 }
 
 @layer components {
@@ -40,6 +51,10 @@
         @apply transition-[filter] duration-500;
 
         filter: drop-shadow(0px 0px 15px rgb(255 255 255 / var(--dropshadow-opacity)));
+    }
+
+    .dropshadow-opacity-15 {
+        --dropshadow-opacity: 0.15;
     }
 
     .dropshadow-opacity-50 {

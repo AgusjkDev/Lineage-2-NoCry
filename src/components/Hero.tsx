@@ -5,7 +5,7 @@ import { features } from "data";
 
 export default function Hero() {
     return (
-        <main className="flex min-h-screen w-full flex-col items-center justify-center gap-6 bg-black/20 pt-20 md:gap-12">
+        <main className="flex min-h-screen w-full flex-col items-center justify-center gap-6 bg-black/25 pt-20 md:gap-12">
             <Image
                 alt="Logo"
                 src="/assets/logo.png"
