@@ -2,14 +2,9 @@ import Image from "next/image";
 
 export default function Feature({ legend, icon }: FeatureProps) {
     return (
-        <div className="flex w-1/3 flex-col items-center gap-2.5 md:w-full">
+        <div className="flex w-1/3 flex-col gap-1 md:w-auto">
             <div className="relative grid place-items-center">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="72px"
-                    height="72px"
-                    className="absolute"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px">
                     <path
                         className="fill-primary"
                         fillRule="evenodd"
@@ -17,10 +12,18 @@ export default function Feature({ legend, icon }: FeatureProps) {
                     ></path>
                 </svg>
 
-                <Image alt={legend} src={`/assets/features/${icon}.png`} width={56} height={56} />
+                <Image
+                    alt={legend}
+                    src={`/assets/features/${icon}.png`}
+                    className="absolute"
+                    width={56}
+                    height={56}
+                    quality={100}
+                    priority
+                />
             </div>
 
-            <p className="text-center font-primary text-white">{legend}</p>
+            <p className="mx-auto max-w-[96px] text-center font-primary text-white">{legend}</p>
         </div>
     );
 }

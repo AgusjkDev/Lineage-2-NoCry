@@ -5,39 +5,38 @@ import { features } from "data";
 
 export default function Hero() {
     return (
-        <main className="flex min-h-screen w-full flex-col items-center justify-center gap-6 bg-black/25 pt-20 md:gap-12">
+        <main className="flex min-h-screen flex-col items-center justify-center gap-6 md:gap-10 lg:gap-12 xl:gap-12">
             <Image
                 alt="Logo"
                 src="/assets/logo.png"
+                className="mt-12 w-2/3 sm:w-1/2 md:mt-20 lg:w-2/5 xl:w-1/3"
                 width={350}
                 height={0}
                 quality={100}
                 priority
-                className="w-4/5 md:w-2/5 lg:w-1/3"
             />
 
             <Image
                 alt="Hero Divider"
                 src="/assets/hero-divider.svg"
+                className="w-2/3 sm:w-1/2 lg:w-2/5 xl:w-1/3"
                 width={350}
                 height={0}
-                quality={100}
                 priority
-                className="w-3/4 md:w-1/4"
             />
 
-            <div className="text-shadow flex flex-col items-center gap-3 text-center font-secondary text-3xl uppercase tracking-wider odd:[&>p]:text-primary even:[&>p]:text-white">
+            <div className="dropshadow dropshadow-opacity-50 text-shadow px-2 text-center font-secondary text-3xl uppercase tracking-wider md:text-4xl 2xl:text-5xl odd:[&>p]:text-primary even:[&>p]:text-white">
                 <p>x3 Classic+</p>
                 <p>Mists of Rune</p>
                 <p>01/01/23, 20:00 GMT-3</p>
             </div>
 
-            <div className="dropshadow dropshadow-opacity-50 text-shadow flex flex-col items-center text-center font-primary text-lg tracking-wide text-white">
-                <p>¡Entra en un nuevo mundo lleno de emocionantes aventuras!</p>
-                <p>¡Únete y escribe tu propia leyenda!</p>
-            </div>
+            <p className="dropshadow dropshadow-opacity-50 max-w-md px-2 text-center font-primary text-lg text-white md:max-w-lg md:text-xl 2xl:max-w-2xl 2xl:text-2xl">
+                ¡Únete a éste nuevo mundo lleno de emocionantes aventuras y escribe tu propia
+                leyenda!
+            </p>
 
-            <div className="mt-4 flex w-full flex-wrap justify-center gap-y-6 md:w-[90%] md:flex-nowrap lg:w-3/4">
+            <div className="flex flex-wrap justify-center gap-y-4 md:w-full md:flex-nowrap md:justify-evenly md:gap-y-0 lg:w-[87.5%] xl:w-4/5">
                 {features.map(({ legend, icon }) => (
                     <Feature key={icon} legend={legend} icon={icon} />
                 ))}
