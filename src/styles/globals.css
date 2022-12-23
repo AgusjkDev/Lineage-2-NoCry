@@ -8,6 +8,8 @@
     }
 
     body {
+        @apply bg-black;
+
         cursor: url(/assets/cursor.cur), auto;
     }
 }

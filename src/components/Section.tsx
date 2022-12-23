@@ -20,7 +20,7 @@ export default function Section({
                         backgroundColor ? backgroundColor : ""
                     } url(${backgroundImage}) center/cover no-repeat`,
                 }),
-                ...(backgroundColor && !backgroundImage && { backgroundColor }),
+                ...(backgroundColor && !backgroundImage && { background: backgroundColor }),
             }}
         >
             {title && (

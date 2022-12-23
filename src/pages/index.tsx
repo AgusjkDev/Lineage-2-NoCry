@@ -20,7 +20,7 @@ export default function Index() {
             <Section
                 fullscreen
                 linesPattern
-                backgroundImage="/assets/bg-slider.png"
+                backgroundImage="/assets/bg-slider.webp"
                 title="Aspectos Generales"
             >
                 <p className="text-center font-primary text-white">En construccion...</p>
@@ -29,7 +29,7 @@ export default function Index() {
             <Section
                 fullscreen
                 linesPattern
-                backgroundImage="/assets/bg-schedule.png"
+                backgroundColor="linear-gradient(180deg, rgba(24,20,20,1) 0%, rgba(60,60,69,1) 50%, rgba(24,20,20,1) 100%)"
                 title="Cronograma Global"
             >
                 <p className="text-center font-primary text-white">En construccion...</p>
@@ -38,7 +38,7 @@ export default function Index() {
             <Section
                 fullscreen
                 linesPattern
-                backgroundImage="/assets/bg-bosses.png"
+                backgroundImage="/assets/bg-bosses.webp"
                 title="Raid Bosses"
             >
                 <p className="text-center font-primary text-white">En construccion...</p>
