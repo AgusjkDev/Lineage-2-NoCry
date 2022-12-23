@@ -8,4 +8,8 @@ type SectionProps = {
     children: React.ReactNode;
 };
 
+type SubtitleProps = {
+    children: React.ReactNode;
+};
+
 type FeatureProps = Feature;

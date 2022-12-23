@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Feature } from ".";
+import { Subtitle, Feature } from ".";
 import { features } from "data";
 
 export default function Hero() {
@@ -31,10 +31,10 @@ export default function Hero() {
                 <p>01/01/23, 20:00 GMT-3</p>
             </div>
 
-            <p className="dropshadow dropshadow-opacity-50 max-w-md px-2 text-center font-primary text-lg text-white md:max-w-lg md:text-xl 2xl:max-w-2xl 2xl:text-2xl">
+            <Subtitle>
                 ¡Únete a éste nuevo mundo lleno de emocionantes aventuras y escribe tu propia
                 leyenda!
-            </p>
+            </Subtitle>
 
             <div className="flex flex-wrap justify-center gap-y-4 md:w-full md:flex-nowrap md:justify-evenly md:gap-y-0 lg:w-[87.5%] xl:w-4/5">
                 {features.map(({ legend, icon }) => (
