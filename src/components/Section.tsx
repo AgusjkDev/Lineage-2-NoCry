@@ -11,8 +11,8 @@ export default function Section({
         <section
             className={`${fullscreen ? "min-h-screen " : ""}${
                 backgroundVideo || linesPattern ? "relative " : ""
-            }${
-                (backgroundImage || backgroundColor) && linesPattern ? "-z-[1] " : ""
+            }${(backgroundImage || backgroundColor) && linesPattern ? "-z-[1] " : ""}${
+                !backgroundVideo ? "py-8 " : ""
             }border-b-2 border-primary`}
             style={{
                 ...(backgroundImage && {
@@ -24,7 +24,7 @@ export default function Section({
             }}
         >
             {title && (
-                <h2 className="dropshadow dropshadow-opacity-50 text-shadow py-8 px-4 text-center font-secondary text-3xl font-bold uppercase tracking-wider text-primary">
+                <h2 className="dropshadow dropshadow-opacity-50 text-shadow px-4 pb-4 text-center font-secondary text-3xl font-bold uppercase tracking-wider text-primary">
                     {title}
                 </h2>
             )}
