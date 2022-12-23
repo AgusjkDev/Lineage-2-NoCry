@@ -1,1 +1,1 @@
-# Lineage2-Web
+# Lineage 2 NoCry
