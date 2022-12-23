@@ -7,3 +7,9 @@ type Feature = {
     legend: string;
     icon: string;
 };
+
+type ImportantDate = {
+    background: string;
+    legend: string;
+    date: string;
+};

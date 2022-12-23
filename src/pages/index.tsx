@@ -1,4 +1,4 @@
-import { Header, Section, Hero } from "components";
+import { Header, Section, Hero, ImportantDates } from "components";
 
 export default function Index() {
     return (
@@ -10,12 +10,11 @@ export default function Index() {
             </Section>
 
             <Section
-                fullscreen
                 backgroundImage="/assets/bg-sparks.png"
                 backgroundColor="#000000"
                 title="Fechas Importantes"
             >
-                <p className="text-center font-primary text-white">En construccion...</p>
+                <ImportantDates />
             </Section>
 
             <Section
