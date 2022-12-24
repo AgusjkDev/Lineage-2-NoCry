@@ -30,14 +30,16 @@ export default function Section({
 
             {backgroundVideo && (
                 <>
-                    <div className="absolute inset-0 -z-[1] h-full bg-[url(/assets/lines-pattern.png)] opacity-50" />
+                    <div
+                        className={`absolute inset-0 h-full bg-[url(/assets/lines-pattern.png)] opacity-50`}
+                    />
 
                     <video
                         autoPlay
                         loop
                         muted
                         src={backgroundVideo}
-                        className={`absolute inset-0 -z-[2] h-full w-full object-cover`}
+                        className={`absolute inset-0 -z-[1] h-full w-full object-cover`}
                     />
                 </>
             )}

@@ -13,9 +13,3 @@ type ImportantDate = {
     legend: string;
     date: string;
 };
-
-type Slider = {
-    background: string;
-    title: string;
-    texts: string[];
-};
