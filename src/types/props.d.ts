@@ -1,6 +1,5 @@
 type SectionProps = {
     fullscreen?: boolean;
-    linesPattern?: boolean;
     backgroundVideo?: string;
     backgroundImage?: string;
     backgroundColor?: string;

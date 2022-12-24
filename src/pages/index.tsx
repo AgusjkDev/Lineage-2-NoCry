@@ -5,7 +5,7 @@ export default function Index() {
         <>
             <Header />
 
-            <Section fullscreen linesPattern backgroundVideo="/assets/bg-hero.webm">
+            <Section fullscreen backgroundVideo="/assets/bg-hero.webm">
                 <Hero />
             </Section>
 
@@ -17,30 +17,19 @@ export default function Index() {
                 <ImportantDates />
             </Section>
 
-            <Section
-                fullscreen
-                linesPattern
-                backgroundImage="/assets/bg-slider.webp"
-                title="Aspectos Generales"
-            >
+            <Section fullscreen backgroundImage="/assets/bg-slider.webp" title="Aspectos Generales">
                 <p className="text-center font-primary text-white">En construccion...</p>
             </Section>
 
             <Section
                 fullscreen
-                linesPattern
                 backgroundColor="linear-gradient(180deg, rgba(24,20,20,1) 0%, rgba(60,60,69,1) 50%, rgba(24,20,20,1) 100%)"
                 title="Cronograma Global"
             >
                 <p className="text-center font-primary text-white">En construccion...</p>
             </Section>
 
-            <Section
-                fullscreen
-                linesPattern
-                backgroundImage="/assets/bg-bosses.webp"
-                title="Raid Bosses"
-            >
+            <Section fullscreen backgroundImage="/assets/bg-bosses.webp" title="Raid Bosses">
                 <p className="text-center font-primary text-white">En construccion...</p>
             </Section>
         </>

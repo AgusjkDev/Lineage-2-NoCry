@@ -1,6 +1,5 @@
 export default function Section({
     fullscreen,
-    linesPattern,
     backgroundVideo,
     backgroundImage,
     backgroundColor,
@@ -9,9 +8,7 @@ export default function Section({
 }: SectionProps) {
     return (
         <section
-            className={`${fullscreen ? "min-h-screen " : ""}${
-                backgroundVideo || linesPattern ? "relative " : ""
-            }${(backgroundImage || backgroundColor) && linesPattern ? "-z-[1] " : ""}${
+            className={`${fullscreen ? "min-h-screen " : ""}${backgroundVideo ? "relative " : ""}${
                 !backgroundVideo ? "py-8 " : ""
             }border-b-2 border-primary`}
             style={{
@@ -32,19 +29,17 @@ export default function Section({
             {children}
 
             {backgroundVideo && (
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    src={backgroundVideo}
-                    className={`absolute inset-0 -z-[3] h-full w-full object-cover`}
-                />
-            )}
+                <>
+                    <div className="absolute inset-0 -z-[1] h-full bg-[url(/assets/lines-pattern.png)] opacity-50" />
 
-            {linesPattern && (
-                <div
-                    className={`absolute inset-0 -z-[2] h-full bg-[url(/assets/lines-pattern.png)] opacity-50`}
-                />
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        src={backgroundVideo}
+                        className={`absolute inset-0 -z-[2] h-full w-full object-cover`}
+                    />
+                </>
             )}
         </section>
     );
